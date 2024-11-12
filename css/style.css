@@ -1,0 +1,319 @@
+/* 基本スタイル */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* コンテンツ全体をページの高さに収める */
+.main {
+  flex: 1; /* フッターをページの下に配置するために使用 */
+}
+
+/* フッター */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* 他のCSSスタイル */
+
+.header {
+  background-color: #fff;
+}
+
+.header_inner {
+  max-width: 1200px;
+  padding: 18px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fv {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CTAスタイル */
+.cta {
+  width: 100vw;
+  margin: 0;
+}
+
+.cta_banner {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 40px 0;
+}
+
+.cta_text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta_title {
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* CTAボタン */
+.cta_button {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+  max-width: 900px;
+  min-width: 200px;
+  padding: 20px 14px;
+  text-align: center;
+  transition: 0.4s;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+/* 重要テキスト */
+.cta_text_container {
+  color: red;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* 画像スタイル */
+.title_image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  height: auto;
+  max-width: 100px;
+}
+
+.footer-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-image {
+  height: auto;
+  max-width: 200px;
+}
+
+.footer-link {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .cta_text {
+    font-size: 18px;
+  }
+
+  .cta_text_container {
+    font-size: 20px;
+  }
+
+  .cta_button {
+    font-size: 18px;
+    padding: 16px;
+    width: auto;
+    margin: 20px 10px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_inner {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .cta_text {
+    font-size: 16px;
+  }
+
+  .cta_text_container {
+    font-size: 18px;
+  }
+
+  .cta_button {
+    font-size: 16px;
+    padding: 14px 12px;
+    width: auto;
+    margin: 20px 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+}
+
+/* short_movie.htmlメインカラー */
+.cta_banner.pink, .cta_button.pink {
+  background-color: #ff76d8;
+  border-color: #ff76d8;
+  border: solid 2px #ff76d8;
+}
+
+.cta_button.pink:hover {
+  color: #ff76d8;
+  background-color: transparent;
+}
+
+.footer.pink {
+  background-color: #ff76d8;
+}
+
+/* movies.htmlメインカラー */
+.cta_title.red {
+  color: #cf2e2e;
+}
+
+.cta_banner.red, .cta_button.red {
+  background-color: #cf2e2e;
+  border-color: #cf2e2e;
+  border: solid 2px #cf2e2e;
+}
+
+.cta_button.red:hover {
+  color: #cf2e2e;
+  background-color: transparent;
+}
+
+.footer.red {
+  background-color: #cf2e2e;
+}
+
+/* directors.htmlメインカラー */
+.cta_title.green {
+  color: #1CE50A;
+}
+
+.cta_banner.green, .cta_button.green {
+  background-color: #1CE50A;
+  border-color: #1CE50A;
+  border: solid 2px #1CE50A;
+}
+
+.cta_button.green:hover {
+  color: #1CE50A;
+  background-color: transparent;
+}
+
+.footer.green {
+  background-color: #1CE50A;
+}
+
+/* thumbnails.htmlメインカラー */
+.cta_title.blue {
+  color: #4990f0;
+}
+
+.cta_banner.blue, .cta_button.blue {
+  background-color: #4990f0;
+  border-color: #4990f0;
+  border: solid 2px #4990f0;
+}
+
+.cta_button.blue:hover {
+  color: #4990f0;
+  background-color: transparent;
+}
+
+.footer.blue {
+  background-color: #4990f0;
+}
+
+/* youtube_script.htmlメインカラー */
+.cta_title.yellow {
+  color: #fc9822;
+}
+
+.cta_banner.yellow, .cta_button.yellow {
+  background-color: #fc9822;
+  border-color: #fc9822;
+  border: solid 2px #fc9822;
+}
+
+.cta_button.yellow:hover {
+  color: #fc9822;
+  background-color: transparent;
+}
+
+.footer.yellow {
+  background-color: #fc9822;
+}
+
+/* youtube_marleting.htmlメインカラー */
+.cta_title.purple {
+  color: #9966CC;
+}
+
+.cta_banner.purple, .cta_button.purple {
+  background-color: #9966CC;
+  border-color: #9966CC;
+  border: solid 2px #9966CC;
+}
+
+.cta_button.purple:hover {
+  color: #9966CC;
+  background-color: transparent;
+}
+
+.footer.purple {
+  background-color: #9966CC;
+}
