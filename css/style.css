@@ -119,6 +119,7 @@ body {
   align-items: center;
   height: auto;
   max-width: 100px;
+  min-width: 50px;
 }
 
 .footer-text{
@@ -191,11 +192,6 @@ body {
   .footer {
     flex-direction: column;
     text-align: center;
-  }
-
-  /* ここに追加 */
-  .footer-icon {
-    margin: 0 auto;
   }
 
   .footer-links {
