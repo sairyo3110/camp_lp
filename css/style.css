@@ -191,7 +191,14 @@ body {
 
   .footer {
     flex-direction: column;
+    align-items: center; /* 追加 */
     text-align: center;
+  }
+
+  .footer-icon {
+    display: flex; /* 追加 */
+    justify-content: center; /* 追加 */
+    margin-bottom: 10px; /* 必要に応じて余白を調整 */
   }
 
   .footer-links {
