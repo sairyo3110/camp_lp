@@ -218,6 +218,10 @@ body {
 
 
 /* short_movie.htmlメインカラー */
+.cta_title.pink {
+  color: #ff76d8;
+}
+
 .cta_banner.pink, .cta_button.pink {
   background-color: #ff76d8;
   border-color: #ff76d8;
