@@ -15,7 +15,7 @@
     <meta name="twitter:card" content="large" />
     <meta name="twitter:site" content="" />
     <meta property="og:locale" content="ja_JP" />
-    <link rel="icon" type="image/x-icon" href="https://traveler20.github.io/practice/common/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>申し込みページ</title>
   </head>
@@ -29,9 +29,7 @@
     <main class="main">
       <section class="fv">
         <div class="fv_inner">
-          <div class="cta">
-            <a class="cta_title blue">サムネイルCAMP</a>
-          </div>
+          <img class="title_image" src="./images/thumbnails_title.png" alt="タイトル画像" />
           <div class="cta">
             <div class="cta_banner blue">
               <a class="cta_text">お申し込みページ</a>
@@ -41,7 +39,10 @@
           <a class="cta_text_container">メールアドレスを使ってください！</a>
           <a class="cta_text_container">gmail推奨となります</a>
           <div class="cta">
-            <a href="#url" class="cta_button blue">お申し込みはこちらから</a>
+            <FORM METHOD="POST" ACTION="https://secure.credix-web.co.jp/cgi-bin/credit/order.cgi" TARGET="_top">
+              <INPUT TYPE="hidden" NAME="clientip" VALUE="1011004591">
+              <INPUT TYPE="hidden" NAME="money" VALUE="110000">
+              <INPUT TYPE="submit" class="cta_button blue" VALUE="お申し込みはこちらから">
           </div>
         </div>
       </section>
@@ -49,7 +50,7 @@
 
     <footer class="footer blue">
 		<div class="footer-icon">
-		  <a class="footer-text">サムネイルCAMP</a>
+		  <img src="./images/footer_logo.png" class="footer-image" alt="ロゴ画像" />
 		</div>
 		<div class="footer-links">
 		  <a href="https://ao-movieblog.com/privacy-policy/" class="footer-link">プライバシーポリシー</a>

@@ -300,20 +300,20 @@ body {
 
 /* youtube_marleting.htmlメインカラー */
 .cta_title.purple {
-  color: #9966CC;
+  color: #757AFF;
 }
 
 .cta_banner.purple, .cta_button.purple {
-  background-color: #9966CC;
-  border-color: #9966CC;
-  border: solid 2px #9966CC;
+  background-color: #757AFF;
+  border-color: #757AFF;
+  border: solid 2px #757AFF;
 }
 
 .cta_button.purple:hover {
-  color: #9966CC;
+  color: #757AFF;
   background-color: transparent;
 }
 
 .footer.purple {
-  background-color: #9966CC;
+  background-color: #757AFF;
 }
